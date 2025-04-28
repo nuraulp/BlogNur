@@ -1,1 +1,1 @@
-nur anjay
+Webpage pribadi saya yang digunakan untuk memenuhi tugas dari mata kuliah Kecerdasan Buatan

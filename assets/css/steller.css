@@ -12,6 +12,12 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 :root {
+    --pink-pastel: #FFD1DC;
+    --pink-light: #FFECF2;
+    --pink-dark: #FF9FB5;
+    --text-color: #444444;
+    --background: #FFFFFF;
+
   --blue: #79A9F5;
   --indigo: #C45F90;
   --purple: #A16AE8;
@@ -25,7 +31,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #ff7a57;
+  --primary: #FF9FB5;
   --secondary: #6c757d;
   --success: #A3C14A;
   --info: #47D8E0;
@@ -67,7 +73,10 @@ body {
   line-height: 1.5;
   color: #495057;
   text-align: left;
-  background-color: #fff;
+  background-color: var(--background);
+    background-image: linear-gradient(var(--pink-light) 1px, transparent 1px), 
+                      linear-gradient(90deg, var(--pink-light) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 [tabindex="-1"]:focus {
@@ -87,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -160,13 +169,13 @@ sup {
 }
 
 a {
-  color: #ff7a57;
+  color: #FFD1DC;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #ff3d0b;
+  color: #FF9FB5;
   text-decoration: underline;
 }
 
@@ -2770,14 +2779,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #212529;
-  background-color: #ff7a57;
-  border-color: #ff7a57;
+  background-color: var(--pink-dark);
+  border-color: var(--pink-dark);
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #ff5c31;
-  border-color: #ff5224;
+  background-color: #ff5f84;
+  border-color: #ff5f84;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2786,15 +2795,15 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #212529;
-  background-color: #ff7a57;
-  border-color: #ff7a57;
+  background-color: #ff5f84;
+  border-color: #ff5f84;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ff5224;
-  border-color: #ff4817;
+  background-color: #ff5f84;
+  border-color: #ff5f84;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -11022,8 +11031,8 @@ pre {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #ff7a57;
-  color: #ff7a57;
+  border: 2px solid #FF9FB5;
+  color: #FF9FB5;
   text-align: center;
   line-height: 40px;
   -webkit-transition: all 0.3s;
@@ -11032,7 +11041,7 @@ pre {
 }
 
 .socials .social-item:hover {
-  background: #ff7a57;
+  background: #FF9FB5;
   color: #fff;
 }
 
@@ -11430,6 +11439,7 @@ pre {
 
 .page-footer p {
   margin-bottom: 0;
+  font-size:medium;
 }
 
 .page-footer .socials {
@@ -11519,7 +11529,7 @@ pre {
 
 .header .container .img-holder img {
   width: 100%;
-  max-width: 620px;
+  max-width: 520px;
   -webkit-filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
           filter: drop-shadow(0 -4px 20px rgba(206, 212, 218, 0.4));
   margin-left: auto;

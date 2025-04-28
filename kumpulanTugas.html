@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Tugas</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="assets/css/steller.css">
+    <style>
+        :root {
+            --pink-pastel: #FFD1DC;
+            --pink-light: #FFECF2;
+            --pink-dark: #FF9FB5;
+            --text-color: #444444;
+            --background: #FFFFFF;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            
+            background-color: var(--background);
+            background-image: linear-gradient(var(--pink-light) 1px, transparent 1px), 
+                            linear-gradient(90deg, var(--pink-light) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: none;
+            color: var(--text-color);
+            border-radius: 8px;
+        }
+        
+        h1 {
+            margin: 0;
+        }
+        
+        .task-container {
+            background-color: var(--pink-light);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: -40px;
+        }
+        
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .task-list li {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: var(--pink-pastel);
+            border-left: 10px solid var(--pink-dark);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .task-list li:hover {
+            background-color: #ffffff;
+            transform: translateX(5px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .task-link {
+            display: block;
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        
+        .task-link:hover {
+            color: #FF9FB5;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: -80px;
+            margin-top: 20px;
+            color: var(--text-color);
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daftar Tugas Kecerdasan Buatan</h1>
+        <p></p>
+        <a href="index.html" class="back-link">← Kembali ke Halaman Depan</a>
+    </header>
+    
+    <main>
+        <div class="task-container">
+            <ul class="task-list">
+                <li>
+                    <a href="tugas1.html" class="task-link">Tugas 1: Apa itu Kecerdasan Buatan</a>
+                </li>
+                <!-- <li>
+                    <a href="tugas2.html" class="task-link">Tugas 2: Sejarah Kecerdasan Buatan</a>
+                </li>
+                <li>
+                    <a href="tugas3.html" class="task-link">Tugas 3: Machine Learning dan Deep Learning</a>
+                </li>
+                <li>
+                    <a href="tugas4.html" class="task-link">Tugas 4: Natural Language Processing</a>
+                </li>
+                <li>
+                    <a href="tugas5.html" class="task-link">Tugas 5: Computer Vision</a>
+                </li> -->
+                <!-- Tambahkan tugas lebih banyak sesuai kebutuhan -->
+            </ul>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Nur Auliya Putri (22110369)</p>
+    </footer>
+</body>
+</html>
